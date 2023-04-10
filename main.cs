@@ -10,4 +10,15 @@ class MyClass
         ArrayPrint(dst);
     }
 
+    static void ArrayFilter(string[] src, string[] dst)
+    {
+        int count = 0; 
+        for (int i = 0; i < src.Length; i++)
+            if (src[i].Length <= 3) 
+            {
+                dst[count] = src[i];
+                count++;
+            }
+    }
+
 }
